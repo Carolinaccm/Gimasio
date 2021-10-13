@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gimnasio </title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funciones.js"></script>
+
+    <style>
+        table, td {
+          border:1px solid black;
+        }
+        table {
+          width:30%;
+        }
+        td {
+          padding:5px;
+        }
+      </style>
+
+</head>
+
+<body  bgcolor="#ADD8E6">
+    <img src="https://placeimg.com/240/100/people" alt="image banner"><img src="https://placeimg.com/240/100/animals" alt="image banner">
+    <img src="https://placeimg.com/240/100/arch" alt="image banner"><img src="https://placeimg.com/240/100/nature" alt="image banner">
+    <img src="https://placeimg.com/240/100/sepia" alt="image banner">
+    <h1><p style="text-align:center">Reto 2 Gimnasio</p></h1>
+    
+    
+    <br><!--tabla Gimnasio-->
+    <div>
+        <!--imagen-->
+        <img src="https://placeimg.com/1200/100/nature" alt="image banner">
+    </div>
+    <h3>Tabla Gimnasio</h3>
+    
+    <br>
+    <br>
+    <div> <!--campos de esctitura segun la tabla de máquinas-->
+        <input type="number" id="id" placeholder="id">
+        <input type="text" id="brand" placeholder="brand">
+        <input type="number" id="model" placeholder="model">
+        <input type="number" id="category_id" placeholder="category_id">
+        <input type="text" id="name" placeholder="name">
+    </div>
+    <br>
+    <br> <!--Botones de las funciones GET,POST y PUT-->
+    <button onclick="MostrarDatosMaquina()"> Mostrar lista de Maquinas </button>
+    <button onclick="GuardarDatosMaquina()">Guardar Maquina</button>
+    <button onclick="EditarDatosMaquina()">Editar info de Maquina</button>
+    <br>
+    <br> <!--Estructura de la Tabla de Máquinas-->
+    <div id="ListaMaquinas"> </div>
+
+    <br>
+    <br>
+    <div>
+        <!--imagen-->
+        <img src="https://placeimg.com/1200/100/sepia" alt="image banner">
+    </div>
+    <h3>Tabla Clientes</h3>
+    
+    <br>
+    <br>
+    <div> <!--campos de esctitura segun la tabla de clientes-->
+        <input type="number" id="id" placeholder="id">
+        <input type="text" id="name" placeholder="name">
+        <input type="text" id="email" placeholder="email">
+        <input type="number" id="age" placeholder="age">
+    </div>
+    <br>
+    <br> <!--Botones de las funciones GET,POST y PUT-->
+    <button onclick="MostrarDatosCliente()"> Mostrar lista de Clientes </button>
+    <button onclick="GuardarDatosCliente()">Guardar Cliente</button>
+    <button onclick="EditarDatosCliente()">Editar info de Cliente</button>
+    <br>
+    <br> <!--Estructura de la Tabla de Máquinas-->
+    <div id="ListaClientes"> </div>
+
+    <br>
+    <div>
+        <!--imagen-->
+        <img src="https://placeimg.com/1200/100/animals" alt="image banner">
+    </div>
+    <h3>Tabla Mensajes</h3>
+    </div>
+     <div>
+        <input type="number" id="id" placeholder="id">
+        <input type="text" id="messagetext" placeholder="messagetext">
+    </div>
+    <br>
+    <input type ="button" onclick="MostrarMensajes()" title="Mostrar Lista de Mensajes" value="Mostrar">
+    <button onclick="GuardarMensajes()">Guardar Mensaje</button>
+    <button onclick="ActualizarMensajes()">Actualizar Mensaje</button>
+    <br>
+    <br>
+    <div id="ListaMensajes"></div> <!--identificador de la tabla-->
+    <br>
+</body>
+
+
+</html>
